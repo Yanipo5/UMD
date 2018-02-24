@@ -6,7 +6,7 @@
   "scripts": {
     "hot": "browser-sync start --server --files '*.html' 'components/*.html' 'js/*.js' 'css/*.css'",
     "//hot": "will start a development server with hot reload",
-    "q2": "node q2.js"
+    "q2": "node Q2/q2.js"
   },
   "dependencies": {
     "angular": "^1.6.9",
