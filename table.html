@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UMD International</title>
+    <link rel="shortcut icon" href="resources/umd_logo.png" type="image/x-icon">
+    <!-- Styles -->
+    <link rel="stylesheet" href="node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Scripts -->
+    <script src="node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="node_modules/bootstrap-material-design/dist/js/bootstrap-material-design.min.js"></script>
+    <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
+</head>
+
+<body ng-app="main" ng-controller="table-controller">
+    <div class="center">
+        <div class="jumbotron title-container">
+            <h1>UMD International</h1>
+            <img src="resources/umd_logo.png" alt="YMD Logo">
+        </div>
+        <div>
+            <button ng-click="logout()" class="btn btn-raised btn-primary center-item">Logout</button>
+        </div>
+        <contacts-person-table></contacts-person-table>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

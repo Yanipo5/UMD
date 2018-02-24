@@ -1,0 +1,69 @@
+/*
+###############
+    Generals
+############### */
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.title-container {
+    width: 400px;
+    margin: auto;
+    padding: 40px;
+    max-width: 100%;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-form label span {
+    text-align: left;
+    width: 90px;
+    display: inline-block;
+}
+
+.center-item {
+    align-self: center;
+}
+
+.description {
+    margin-top: 30px;
+    display: block;
+    width: 500px;
+    max-width: 100%;
+}
+
+/*  
+##################
+index page
+################## */
+
+.form-container {
+    margin: auto;
+    max-width: 100%;
+    width: 400px;
+}
+
+/*  
+##################
+Login page
+################## */
+
+.error {
+    color: red;
+}
+
+
+/*  
+##################
+Contact Person Table
+################## */
+
+.contact-person td {
+    padding: 20px;
+}

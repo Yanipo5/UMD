@@ -1,0 +1,14 @@
+<table class="center table table-striped title-container">
+    <thead>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="contacts in contacts" class="contact-person">
+            <td>{{contacts.name}}</td>
+            <td>{{contacts.phone}}</td>
+            <td>{{contacts.email}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UMD International</title>
+    <link rel="shortcut icon" href="resources/umd_logo.png" type="image/x-icon">
+    <!-- Styles -->
+    <link rel="stylesheet" href="node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Scripts -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="node_modules/bootstrap-material-design/dist/js/bootstrap-material-design.min.js"></script>
+    <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
+</head>
+
+<body ng-app="main" ng-controller="main-controller">
+    <div class="center">
+        <div class="jumbotron title-container">
+            <h1>UMD International</h1>
+            <img src="resources/umd_logo.png" alt="YMD Logo">
+            <p>Please fill out the form and we will contact you for further details</p>
+        </div>
+        <form name="contactPersonForm">
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="input-name" class="bmd-label-floating">Name</label>
+                    <input class="form-control" id="input-name" ng-model="contact.name" required>
+                </div>
+                <div class="form-group">
+                    <label for="input-phone" class="bmd-label-floating">Phone</label>
+                    <input type="number" class="form-control" id="input-phone" ng-model="contact.phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="input-email" class="bmd-label-floating">Email address</label>
+                    <input type="email" class="form-control" id="input-email" ng-model="contact.email" required>
+                    <span class="bmd-help">We'll never share your email with anyone else.</span>
+                </div>
+                <button ng-disabled="!contactPersonForm.$valid" ng-click="save()" class="btn btn-raised btn-primary center-item">Send</button>
+                <span> Or </span>
+                <a href="login.html" class="center-item">Go To login Page</a>
+        </form>
+        </div>
+    </div>
+
+    <small class="description center">
+        This app uses localStorage only to make it a complete stand alone client app (persistancy is achive on the client localStorage)
+    </small>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
