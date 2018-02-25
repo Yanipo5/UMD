@@ -1,4 +1,6 @@
-#Home Assiment
+# Home Assiment
+get all dependancies with `yarn install` or `npm install`
+
 ## Q1
 echo `yarn hot` \ `npm run hot`
 this will open a development server, and the browser automatically.
