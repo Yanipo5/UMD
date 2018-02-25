@@ -68,7 +68,7 @@ angular
   })
   .directive("contactsPersonTable", () => {
     return {
-      templateUrl: "../components/contactsPersonTable.html"
+      templateUrl: "components/contactsPersonTable.html"
     };
   });
 
